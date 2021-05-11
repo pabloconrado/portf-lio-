@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(101, 153, 250);
+    background-color: rgb(31, 33, 39);
+}
+
+
+#img-v{
+    justify-content: flex-end;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    border-radius: 70%;
+    
+}
+.header-container{
+    height: 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+    
+}
+  .developer {
+    margin: left 10px;
+    margin-top: 100px;
+  }
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: -10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+.social-media a{
+    text-decoration: none;
+    color: rgb(97, 184, 206);
+    padding: 1rem 4rem;
+    border: 1px solid rgb(97, 184, 206);
+    min-width: 4rem;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+a:hover {
+    background-color: rgb(148, 151, 151);
+}
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: rgb(97, 184, 206);
+    position: absolute;
+    border-radius: 4px;
+    transition:  0,5s ease-in-out;
+
+}
+.checkbox .trace:nth-child(1){
+    top: 26px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2){
+    top: 46px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3){
+    top: 66px;
+    transform: rotate(0);
+}
+#toogle {
+    display: none;
+}
+.menu{
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background-color: transparent;
+    height: 4px;
+    width: 18px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px rgb(136, 172, 146);
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-itens {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility:hidden;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-itens ul {
+list-style-type: none;
+}
+.menu-itens ul li a {
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+#toglee:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 47px;
+}
+#toglee:checked + .checkbox .trace:nth-child(2){
+    transform: translate(-100px);
+    width: 30px; 
+    visibility: hidden;
+    opacity: 0;
+}
+#toglee:checked + .checkbox .trace:nth-child(3) {
+    transform:rotate(-45deg);
+    top: 48px;
+}
+#toglee:checked + .checkbox {
+    background-color: rgb(67, 68, 70);
+}
+
+#toglee:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax whitesmoke;
+    z-index: 1;
+}
+#toglee:checked ~ .menu-itens {
+    visibility: visible;
+    opacity: 1;
+}
+.foto-cv {
+    margin-top: 150px;
+}
+.card {
+    margin-left: 90px;
+    max-width: 300px;
+    align-items: center;
+    display: flex;
+}
+.card-body {
+    margin-top: -290px;
+    margin-left: 350px;
+    max-width: 350px;
+    align-items: center;
+    float: left;
+    display: flex;
+}
+
+.cv-21 {
+    display: flex;
+    margin-left: 168px;
+    margin-top: -280px;
+    max-width: 110px;
+    background-color:  rgb(31, 33, 39);
+   
+}
+
+.card-link {
+    text-decoration: none;
+    color: rgb(227, 233, 235);
+    padding: 1rem 4rem;
+    border:none;
+    min-width: 2rem;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+  
+}
+
+.card-link:hover {
+    background-color: rgb(26, 219, 84);
+}
+.card-link {
+    display: flex;
+    position: absolute;
+    margin: 300px;
+    margin-left: 180px;
+    border-radius: 100px;
+}
